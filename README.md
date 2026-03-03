@@ -39,9 +39,9 @@ Esto demuestra que el sistema de aprobación está fuertemente condicionado por 
 ---
 
 ## Project Structure
-- src/ # Pipeline de entrenamiento y evaluación
-- notebooks/ # Notebook de análisis
-- reports/ # Métricas y visualizaciones
+- src/ -> Pipeline de entrenamiento y evaluación
+- notebooks/ -> Notebook de análisis
+- reports/ -> Métricas y visualizaciones
 - requirements.txt
 - README.md
 
