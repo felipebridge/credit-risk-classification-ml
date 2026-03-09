@@ -1,6 +1,6 @@
 # Credit Risk Classification Machine Learning Project
 
-Proyecto estructurado de Machine Learning para clasificación multi-clase de aprobación crediticia, incluyendo un ablation study para evaluar la dependencia del modelo respecto a `Credit_Score`.
+Proyecto end-to-end estructurado de Machine Learning para clasificación multi-clase de aprobación crediticia, incluyendo un ablation study para evaluar la dependencia del modelo respecto a `Credit_Score`.
 
 ---
 
