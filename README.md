@@ -2,7 +2,7 @@
 
 Proyecto end-to-end estructurado de Machine Learning para clasificación multi-clase de aprobación crediticia, incluyendo un ablation study para evaluar la dependencia del modelo respecto a `Credit_Score`.
 
----
+--
 
 ## Overview
 
