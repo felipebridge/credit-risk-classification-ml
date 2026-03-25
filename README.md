@@ -4,7 +4,7 @@ Proyecto end-to-end estructurado de Machine Learning para clasificación multi-c
 
 ---
 
-## Overviw
+## Overview
 
 Este proyecto implementa un pipeline reproducible de Machine Learning para predecir categorías de aprobación crediticia (`Approved_Flag`) utilizando variables financieras y comportamentales.
 
