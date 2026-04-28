@@ -16,7 +16,6 @@ MISSING_VALUE_SENTINEL = -99999
 RANDOM_SEED = 42
 TEST_SIZE = 0.2
 
-DROP_CREDIT_SCORE = False
 CREDIT_SCORE_COL = "Credit_Score"
 
 MODEL_PATH = MODELS_DIR / "credit_approval_model.joblib"

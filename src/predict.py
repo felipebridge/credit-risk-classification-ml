@@ -1,3 +1,5 @@
+import argparse
+
 import numpy as np
 import pandas as pd
 from joblib import load
@@ -28,7 +30,7 @@ def predict_from_excel(input_path: str, output_path: str) -> None:
 
     preds = model.predict(X)
 
-    out = pd.DataFrame({"prediction_Approved_Flag": preds})
+    out = pd.DataFrame({TARGET_COL: preds})
     if ids is not None:
         out.insert(0, ID_COL, ids)
 
@@ -36,5 +38,19 @@ def predict_from_excel(input_path: str, output_path: str) -> None:
 
 
 if __name__ == "__main__":
-    predict_from_excel("data/raw/case_study2.xlsx", "reports/predictions.csv")
-    print("Predicciones guardadas en reports/predictions.csv")
+    parser = argparse.ArgumentParser(
+        description="Genera predicciones de aprobación crediticia a partir de un archivo Excel."
+    )
+    parser.add_argument(
+        "--input",
+        default="data/raw/case_study2.xlsx",
+        help="Ruta al archivo Excel de entrada.",
+    )
+    parser.add_argument(
+        "--output",
+        default="reports/predictions.csv",
+        help="Ruta al archivo CSV de salida.",
+    )
+    args = parser.parse_args()
+    predict_from_excel(args.input, args.output)
+    print(f"Predicciones guardadas en {args.output}")

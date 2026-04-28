@@ -1,6 +1,6 @@
-pandas
-numpy
-scikit-learn
-joblib
-openpyxl
-matplotlib
+pandas>=1.5
+numpy>=1.23
+scikit-learn>=1.2
+joblib>=1.2
+openpyxl>=3.0
+matplotlib>=3.6
